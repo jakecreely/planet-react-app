@@ -5,3 +5,43 @@
     background-color: $background;
     background-image: url('../../starting-code/assets/background-stars.svg');
 }
+
+#navbar {
+    color: $primaryText;
+    height: 5em;
+    #nav-title {
+        @extend h2;
+        float: left;
+        padding-right: 50%;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -1.05px;
+    }
+
+    li {
+        @extend body;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 11px;
+        letter-spacing: 1px;
+        display: inline;
+        text-transform: uppercase;
+        padding-left: 20px;
+
+        a {
+            padding: 20px;
+            &:hover {
+                border-top: 6px solid red;
+            }
+        }
+        
+    }
+
+    ul {
+        height: 100%;
+        padding: 20px;
+        margin-top: 0;
+        list-style-type: none;
+    }
+}

@@ -11,7 +11,7 @@ h1 {
   color: #FFFFFF;
 }
 
-h2 {
+h2, #navbar #nav-title {
   font-family: "Antonio", sans-serif;
   font-size: 40px;
   line-height: 52px;
@@ -34,7 +34,7 @@ h4 {
   letter-spacing: 1px;
 }
 
-body {
+body, #navbar li {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -44,5 +44,44 @@ body {
 .app {
   background-color: #070724;
   background-image: url("../../starting-code/assets/background-stars.svg");
+}
+
+#navbar {
+  color: #FFFFFF;
+  height: 5em;
+}
+
+#navbar #nav-title {
+  float: left;
+  padding-right: 50%;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.05px;
+}
+
+#navbar li {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 1px;
+  display: inline;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+#navbar li a {
+  padding: 20px;
+}
+
+#navbar li a:hover {
+  border-top: 6px solid red;
+}
+
+#navbar ul {
+  height: 100%;
+  padding: 20px;
+  margin-top: 0;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,10 +3,18 @@ import 'react-dom';
 
 function NavBar() {
     return(
-        <div>
-            <nav>
-                <a><h1>Test</h1>Test</a>
-            </nav>
+        <div id='navbar'>
+                <ul>
+                    <li>
+                        <div id='nav-title'>THE PLANETS</div>
+                    </li>
+                    <li>
+                    <a>Test</a>
+                    </li>
+                    <li>
+                        <a>Hello</a>
+                    </li>
+                </ul>
         </div>
     )
 }
