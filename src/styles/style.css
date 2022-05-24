@@ -1,0 +1,48 @@
+/* Primary Text Colour */
+/* Background Colour */
+/* Planet Colours */
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+@import url("./_colours.scss");
+h1 {
+  font-family: "Antonio", sans-serif;
+  font-size: 80px;
+  line-height: 103px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: "Antonio", sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.6px;
+}
+
+h4 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.app {
+  background-color: #070724;
+  background-image: url("../../starting-code/assets/background-stars.svg");
+}
+/*# sourceMappingURL=style.css.map */
