@@ -11,7 +11,7 @@ h1 {
   color: #FFFFFF;
 }
 
-h2, #navbar #nav-title {
+h2, .navbar .nav-title {
   font-family: "Antonio", sans-serif;
   font-size: 40px;
   line-height: 52px;
@@ -34,7 +34,7 @@ h4 {
   letter-spacing: 1px;
 }
 
-body, #navbar li {
+body, .navbar li {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -46,21 +46,26 @@ body, #navbar li {
   background-image: url("../../starting-code/assets/background-stars.svg");
 }
 
-#navbar {
+.navbar {
   color: #FFFFFF;
   height: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#navbar #nav-title {
-  float: left;
-  padding-right: 50%;
+.navbar .nav-title {
   font-weight: 400;
   font-size: 28px;
-  line-height: 36px;
+  line-height: 30px;
   letter-spacing: -1.05px;
+  padding-right: 500px;
 }
 
-#navbar li {
+.navbar li {
   font-weight: 700;
   font-style: normal;
   font-size: 11px;
@@ -70,18 +75,48 @@ body, #navbar li {
   padding-left: 20px;
 }
 
-#navbar li a {
-  padding: 20px;
+.navbar li a {
+  text-decoration: none;
+  padding: 5px;
+  color: #FFFFFF;
 }
 
-#navbar li a:hover {
-  border-top: 6px solid red;
-}
-
-#navbar ul {
+.navbar ul {
   height: 100%;
   padding: 20px;
   margin-top: 0;
   list-style-type: none;
+}
+
+.navbar #mercury-link:hover {
+  border-top: 3px solid #419EBB;
+}
+
+.navbar #venus-link:hover {
+  border-top: 3px solid #EDA249;
+}
+
+.navbar #earth-link:hover {
+  border-top: 3px solid #6D2ED5;
+}
+
+.navbar #mars-link:hover {
+  border-top: 3px solid #D14C32;
+}
+
+.navbar #jupiter-link:hover {
+  border-top: 3px solid #D83A34;
+}
+
+.navbar #saturn-link:hover {
+  border-top: 3px solid #CD5120;
+}
+
+.navbar #uranus-link:hover {
+  border-top: 3px solid #1EC1A2;
+}
+
+.navbar #neptune-link:hover {
+  border-top: 3px solid #2D68F0;
 }
 /*# sourceMappingURL=style.css.map */

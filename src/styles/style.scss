@@ -6,17 +6,24 @@
     background-image: url('../../starting-code/assets/background-stars.svg');
 }
 
-#navbar {
+@mixin link-hover ($colour){
+    border-top: 3px solid $colour;
+}
+
+.navbar {
     color: $primaryText;
     height: 5em;
-    #nav-title {
+    display: flex;
+    align-items: center;
+
+    .nav-title {
         @extend h2;
-        float: left;
-        padding-right: 50%;
+        // padding-right: 50%;
         font-weight: 400;
         font-size: 28px;
-        line-height: 36px;
+        line-height: 30px;
         letter-spacing: -1.05px;
+        padding-right: 500px;
     }
 
     li {
@@ -30,10 +37,9 @@
         padding-left: 20px;
 
         a {
-            padding: 20px;
-            &:hover {
-                border-top: 6px solid red;
-            }
+            text-decoration: none;
+            padding: 5px;
+            color: $primaryText;
         }
         
     }
@@ -44,4 +50,53 @@
         margin-top: 0;
         list-style-type: none;
     }
+
+    #mercury-link {
+        &:hover {
+            @include link-hover($mercury)
+        }
+    }
+
+    #venus-link {
+        &:hover {
+            @include link-hover($venus)
+        }
+    }
+
+    #earth-link {
+        &:hover {
+            @include link-hover($earth)
+        }
+    }
+
+    #mars-link {
+        &:hover {
+            @include link-hover($mars)
+        }
+    }
+
+    #jupiter-link {
+        &:hover {
+            @include link-hover($jupiter)
+        }
+    }
+
+    #saturn-link {
+        &:hover {
+            @include link-hover($saturn)
+        }
+    }
+
+    #uranus-link {
+        &:hover {
+            @include link-hover($uranus)
+        }
+    }
+    
+    #neptune-link {
+        &:hover {
+            @include link-hover($neptune)
+        }
+    }
+
 }
