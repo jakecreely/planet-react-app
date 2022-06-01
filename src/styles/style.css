@@ -43,7 +43,7 @@ body, .navbar li {
 
 .app {
   background-color: #070724;
-  background-image: url("../../starting-code/assets/background-stars.svg");
+  background-image: url("../assets/background-stars.svg");
 }
 
 .navbar {
