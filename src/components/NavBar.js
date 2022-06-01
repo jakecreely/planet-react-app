@@ -1,5 +1,6 @@
 import React from 'react';
 import 'react-dom';
+import {Link} from 'react-router-dom'
 
 function NavBar() {
     return(
@@ -10,35 +11,35 @@ function NavBar() {
                     </li>
 
                     <li>
-                    <a id='mercury-link'>Mercury</a>
+                    <Link to="/mercury" id='mercury-link' className='links'>Mercury</Link>
                     </li>
 
                     <li>
-                    <a id='venus-link'>Venus</a>
+                    <Link to="/venus" id='venus-link' className='links'>Venus</Link>
                     </li>
 
                     <li>
-                    <a id='earth-link'>Earth</a>
+                    <Link to="/earth" id='earth-link' className='links'>Earth</Link>
                     </li>
 
                     <li>
-                    <a id='mars-link'>Mars</a>
+                    <Link to="/mars" id='mars-link' className='links'>Mars</Link>
                     </li>
 
                     <li>
-                    <a id='jupiter-link'>Jupiter</a>
+                    <Link to="/jupiter" id='jupiter-link' className='links'>Jupiter</Link>
                     </li>
 
                     <li>
-                    <a id='saturn-link'>Saturn</a>
+                    <Link to="/saturn" id='saturn-link' className='links'>Saturn</Link>
                     </li>
 
                     <li>
-                    <a id='uranus-link'>Uranus</a>
+                    <Link to="/uranus" id='uranus-link' className='links'>Uranus</Link>
                     </li>
 
                     <li>
-                    <a id='neptune-link'>Neptune</a>
+                    <Link to="/neptune" id='neptune-link' className='links'>Neptune</Link>
                     </li>
 
                 </ul>
