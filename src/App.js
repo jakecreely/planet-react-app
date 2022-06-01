@@ -5,6 +5,8 @@ import 'react-dom';
 import NavBar from './components/NavBar';
 import MainContainer from './components/MainContainer';
 
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 function App() {
 
   const [planetData, setPlanetData] = useState(null);
@@ -19,13 +21,6 @@ function App() {
     })
   }, [])
 
-  const extractPlanet = (planetName) => {
-    data = planetData.filter(item => {
-      return item.name = planetName
-    })
-    console.log(data)
-    return data
-  }
 
 // Set the data from json
 // Create function which finds specified planet
@@ -34,10 +29,15 @@ function App() {
 // This data is then passed to the main component
 
   return (
+    <Router>
     <div className="app">
       <NavBar /> 
-      <MainContainer />
+      <Routes>
+        {/* <Route path='/' exact render={() => <MainContainer />}/> */}
+        <Route path='/:name' element={<MainContainer loadedData={planetData}/>}/>
+      </Routes>
     </div>
+    </ Router>
   );
 }
 

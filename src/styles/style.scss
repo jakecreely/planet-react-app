@@ -3,7 +3,7 @@
 
 .app {
     background-color: $background;
-    background-image: url('../assets/background-stars.svg');
+    background-image: url('../../public/assets/background-stars.svg');
 }
 
 @mixin link-hover ($colour){
