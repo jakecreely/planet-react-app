@@ -5,9 +5,10 @@ import ImagePanel from './ImagePanel';
 import SidePanel from './SidePanel';
 import {useParams} from "react-router-dom";
 
-function MainContainer(props) {
+function MainContainer() {
 
-    const [planetData, setPlanetData] = useState("")
+    const [planetData, setPlanetData] = useState(null)
+    const [isLoading, setLoading] = useState(true)
     let params = useParams();
 
     useEffect(() => {
@@ -17,13 +18,15 @@ function MainContainer(props) {
         })
         .then(data => {
             const filtered = data.filter(planet => {
-                return planet.name.toLowerCase() == params.name.toLowerCase()
+                return planet.name.toLowerCase() === params.name.toLowerCase()
             })
             setPlanetData(filtered)
-            console.log(filtered[0])
+            console.log(filtered)
+            setLoading(false);
         })
     }, [params.name])
 
+    if (!isLoading) {
     return ( <div className='mainContainer'>
         <ImagePanel images={planetData[0].images}/>
         <SidePanel data={{
@@ -38,6 +41,11 @@ function MainContainer(props) {
             "temperature": planetData[0].temperature
         }}/>
     </div>)
+    } else {
+        <div>
+            Still Loading...
+        </div>
+    }
 }
 
 export default MainContainer
