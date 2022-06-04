@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'react-dom';
 
-function ImagePanel() {
+function ImagePanel(props) {
+
+    useEffect(() => {
+        console.log(props.images[2])
+    }, [props.layer])
+
     return (<div className='image-panel'>
-        Image Panel
+        <img src={props.images}></img>
     </div>)
 }
 

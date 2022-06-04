@@ -1,9 +1,13 @@
 import React from 'react';
 import 'react-dom';
 
-function BottomPanel() {
+function BottomPanel(props) {
     return (<div className='stats-panel'>
-        Bottom Panel
+        {/* 4 Info Cards */}
+        Radius: {props.data.radius}
+        Revolution: {props.data.revolution}
+        Rotation: {props.data.rotation}
+        Temperature: {props.data.temperature}
     </div>)
 }
 

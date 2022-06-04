@@ -9,6 +9,10 @@ function MainContainer() {
 
     const [planetData, setPlanetData] = useState(null)
     const [isLoading, setLoading] = useState(true)
+
+    const [selectedLayer, setLayer] = useState("structure")
+    const [imageData, setImageData] = useState(null)
+    const [layerData, setLayerData] = useState(null)
     let params = useParams();
 
     useEffect(() => {
@@ -21,19 +25,32 @@ function MainContainer() {
                 return planet.name.toLowerCase() === params.name.toLowerCase()
             })
             setPlanetData(filtered)
-            console.log(filtered)
             setLoading(false);
+            console.log(filtered)
+            return filtered;
+        }).then(data => {
+            if (selectedLayer === "overview") {
+                setImageData(data[0].images["planet"])
+                setLayerData(data[0].overview)
+            } else if (selectedLayer === "structure") {
+                setImageData(data[0].images["internal"])
+                setLayerData(data[0].structure)
+            }
+            else if (selectedLayer === "geology") {
+                setImageData(data[0].images["geology"])
+                setLayerData(data[0].geology)
+            }
         })
-    }, [params.name])
+    }, [params.name, selectedLayer])
+
+    const updateLayer = (value) => {
+        setLayer(value)
+    }
 
     if (!isLoading) {
     return ( <div className='mainContainer'>
-        <ImagePanel images={planetData[0].images}/>
-        <SidePanel data={{
-            "overview": planetData[0].overview, 
-            "geology": planetData[0].geology,
-            "structure": planetData[0].structure
-            }}/>
+        <ImagePanel images={imageData} layer={selectedLayer}/>
+        <SidePanel name={planetData[0].name} data={layerData} layer={selectedLayer} updateLayer={updateLayer}/>
         <BottomPanel data={{
             "radius": planetData[0].radius,
             "revolution": planetData[0].revolution,

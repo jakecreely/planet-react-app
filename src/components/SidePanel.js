@@ -1,9 +1,15 @@
 import React from 'react';
 import 'react-dom';
 
-function SidePanel() {
+function SidePanel (props) {
+
     return (<div className='info-panel'>
-        Side Panel
+        {props.name}
+        {props.data.content}
+        {props.data.source}
+        <button onClick={() => props.updateLayer("overview")}>Overview</button>
+        <button onClick={() => props.updateLayer("structure")}>Structure</button>
+        <button onClick={() => props.updateLayer("geology")}>Geology</button>
     </div>)
 }
 
