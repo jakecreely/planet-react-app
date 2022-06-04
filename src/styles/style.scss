@@ -109,6 +109,14 @@
 
     .image-panel {
         flex: 50%;
+        display: flex;
+        justify-content: center;
+        min-width: 668px;
+        min-height: 668px;
+    }
+
+    img {
+        object-fit: none;
     }
 
     .info-panel {
@@ -135,4 +143,9 @@
         }
     }
 
+}
+
+button {
+    min-width: 350px;
+    min-height: 48px;
 }

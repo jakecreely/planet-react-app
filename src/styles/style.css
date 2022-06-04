@@ -137,6 +137,19 @@ body, .navbar li {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 668px;
+  min-height: 668px;
+}
+
+.mainContainer img {
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .mainContainer .info-panel {
@@ -173,5 +186,10 @@ body, .navbar li {
         -ms-flex: 25%;
             flex: 25%;
   }
+}
+
+button {
+  min-width: 350px;
+  min-height: 48px;
 }
 /*# sourceMappingURL=style.css.map */
