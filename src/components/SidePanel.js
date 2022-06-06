@@ -4,9 +4,11 @@ import 'react-dom';
 function SidePanel (props) {
 
     return (<div className='info-panel'>
-        <h1>{props.name}</h1>
-        <body>{props.data.content}
-        {props.data.source}</body>
+        <h1 className='title'>{props.name.toUpperCase()}</h1>
+        <body className='content'>
+            <div>{props.data.content}</div>
+            <div>Source: <a href={props.data.source}>Wikipedia</a></div>
+        </body>
         <button onClick={() => props.updateLayer("overview")}>Overview</button>
         <button onClick={() => props.updateLayer("structure")}>Structure</button>
         <button onClick={() => props.updateLayer("geology")}>Geology</button>
