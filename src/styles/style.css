@@ -143,8 +143,31 @@ body, .navbar li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   min-width: 668px;
   min-height: 668px;
+}
+
+.mainContainer .image-panel .image {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-width: 668px;
+  min-height: 668px;
+}
+
+.mainContainer .image-panel .overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .mainContainer img {

@@ -37,7 +37,7 @@ function MainContainer() {
                 setLayerData(data[0].structure)
             }
             else if (selectedLayer === "geology") {
-                setImageData(data[0].images["geology"])
+                setImageData([data[0].images["planet"],data[0].images["geology"]])
                 setLayerData(data[0].geology)
             }
         })
