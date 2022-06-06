@@ -1,9 +1,10 @@
 import React from 'react';
 import 'react-dom';
 
-function InfoCard() {
-    return (<div>
-        Info Card
+function InfoCard(props) {
+    return (<div class='info-card'>
+        <h2> {props.title} </h2>
+        <h2> {props.data} </h2>
     </div>)
 }
 

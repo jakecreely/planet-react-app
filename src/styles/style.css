@@ -196,6 +196,24 @@ body, .navbar li {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
           flex: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 250px;
+  padding-top: 50px;
+}
+
+.mainContainer .stats-panel .info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 768px) {

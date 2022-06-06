@@ -1,13 +1,13 @@
 import React from 'react';
 import 'react-dom';
+import InfoCard from './InfoCard';
 
 function BottomPanel(props) {
     return (<div className='stats-panel'>
-        {/* 4 Info Cards */}
-        Radius: {props.data.radius}
-        Revolution: {props.data.revolution}
-        Rotation: {props.data.rotation}
-        Temperature: {props.data.temperature}
+        <InfoCard title={"Radius"} data={props.data.radius}/>
+        <InfoCard title={"Revolution"} data={props.data.revolution}/>
+        <InfoCard title={"Rotation"} data={props.data.rotation}/>
+        <InfoCard title={"Temperature"} data={props.data.temperature}/>
     </div>)
 }
 

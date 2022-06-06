@@ -143,6 +143,15 @@
 
     .stats-panel {
         flex: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 250px;
+        padding-top: 50px;
+
+        .info-card {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     @media (max-width: 768px) {
