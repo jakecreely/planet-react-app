@@ -12,7 +12,7 @@ h1 {
   color: #FFFFFF;
 }
 
-h2, .navbar .nav-title {
+h2, .nav-container .nav-title {
   font-family: "Antonio", sans-serif;
   font-weight: 500;
   font-size: 40px;
@@ -49,6 +49,35 @@ body, .navbar li {
   overflow: auto;
 }
 
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-container .nav-title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: -1.05px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav-container .nav-title {
+    text-align: center;
+  }
+}
+
 .navbar {
   color: #FFFFFF;
   height: 5em;
@@ -59,14 +88,6 @@ body, .navbar li {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0px;
-}
-
-.navbar .nav-title {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 30px;
-  letter-spacing: -1.05px;
-  padding-right: 500px;
 }
 
 .navbar li {
@@ -245,17 +266,20 @@ body, .navbar li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .mainContainer img {
+    -webkit-transform: scale(0.63);
+            transform: scale(0.63);
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .mainContainer .image-panel {
-    -webkit-box-flex: 35%;
-        -ms-flex: 35%;
-            flex: 35%;
-    min-width: 422px;
-    min-height: 422px;
+    height: 422px;
+    width: 422px;
   }
   .mainContainer .info-panel {
-    -webkit-box-flex: 35%;
-        -ms-flex: 35%;
-            flex: 35%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

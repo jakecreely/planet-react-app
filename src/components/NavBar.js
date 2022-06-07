@@ -5,11 +5,12 @@ import {Link} from 'react-router-dom'
 function NavBar() {
     return(
         <div className='nav-container'>
-                <ul className='navbar'>
-                    <li className='nav-title'>
-                        <div>THE PLANETS</div>
-                    </li>
+            
+                <div className='nav-title'>
+                    THE PLANETS
+                </div>
 
+                <ul className='navbar'>
                     <li>
                     <Link to="/mercury" id='mercury-link' className='links'>Mercury</Link>
                     </li>
