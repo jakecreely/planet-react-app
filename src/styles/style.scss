@@ -4,6 +4,7 @@
 .app {
     background-color: $background;
     background-image: url('../../public/assets/background-stars.svg');
+    overflow: auto;
 }
 
 @mixin link-hover ($colour){
@@ -15,6 +16,7 @@
     height: 5em;
     display: flex;
     align-items: center;
+    margin-top: 0px;
 
     .nav-title {
         @extend h2;
@@ -34,20 +36,12 @@
         letter-spacing: 1px;
         display: inline;
         text-transform: uppercase;
-        padding-left: 20px;
 
-        .links {
-            text-decoration: none;
-            padding: 5px;
-            color: $primaryText;
-            opacity: 0.75;
-        }
         
     }
 
     ul {
         height: 100%;
-        padding: 20px;
         margin-top: 0;
         list-style-type: none;
     }
@@ -107,7 +101,6 @@
     flex-direction: row;
     color: $primaryText;
     flex-wrap: wrap;
-    padding: 25px;
     padding-top: 0px;
     padding-bottom: 0px;
 
@@ -119,12 +112,9 @@
         min-width: 668px;
         min-height: 668px;
 
+
         .image {
-            position: relative;
-            justify-content: center;
-            align-content: center;
-            min-width: 668px;
-            min-height: 668px;
+
         }
 
         .overlay {
@@ -146,7 +136,6 @@
         flex: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: left;
 
@@ -182,31 +171,52 @@
             .attribute {
                 font: $spartan;
                 font-size: 11px;
-                line-height: 25px;
                 letter-spacing: 1px;
                 font-weight: bold;
                 opacity: 0.5;
             }
 
             .data {
-                line-height: 0;
+                line-height: 0px;
             }
         }
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         flex-direction: column;
 
         .image-panel {
-            flex: 50%;
+            flex: 35%;
+            min-width: 422px;
+            min-height: 422px;
         }
 
         .info-panel {
-            flex: 25%;
+            flex: 35%;
+            display: flex;
+            flex-direction: row;
+            padding: 40px;
+            
+            .content-container {
+                flex: 50%;
+
+                .content {
+                    width: 90%;
+                }
+            }
+
+            .button-container {
+                flex: 50%;
+
+                .buttons {
+                    min-width: 281px;
+                    min-height: 40px;
+                }
+            }
         }
 
         .stats-panel {
-            flex: 25%;
+            flex: 30%;
         }
     }
 
@@ -215,4 +225,14 @@
 button {
     min-width: 350px;
     min-height: 48px;
+    background-color: transparent;
+    border: 1px solid $primaryText;
+    color: $primaryText;
+}
+
+.links {
+    text-decoration: none;
+    margin-left: 33px;
+    color: $primaryText;
+    opacity: 0.75;
 }

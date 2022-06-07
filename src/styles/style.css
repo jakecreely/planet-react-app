@@ -46,6 +46,7 @@ body, .navbar li {
 .app {
   background-color: #070724;
   background-image: url("../../public/assets/background-stars.svg");
+  overflow: auto;
 }
 
 .navbar {
@@ -57,6 +58,7 @@ body, .navbar li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 0px;
 }
 
 .navbar .nav-title {
@@ -74,19 +76,10 @@ body, .navbar li {
   letter-spacing: 1px;
   display: inline;
   text-transform: uppercase;
-  padding-left: 20px;
-}
-
-.navbar li .links {
-  text-decoration: none;
-  padding: 5px;
-  color: #FFFFFF;
-  opacity: 0.75;
 }
 
 .navbar ul {
   height: 100%;
-  padding: 20px;
   margin-top: 0;
   list-style-type: none;
 }
@@ -134,7 +127,6 @@ body, .navbar li {
   color: #FFFFFF;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 25px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
@@ -146,17 +138,6 @@ body, .navbar li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  min-width: 668px;
-  min-height: 668px;
-}
-
-.mainContainer .image-panel .image {
-  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -192,9 +173,6 @@ body, .navbar li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -251,17 +229,16 @@ body, .navbar li {
 .mainContainer .stats-panel .info-card .attribute {
   font: "League Spartan", sans-serif;
   font-size: 11px;
-  line-height: 25px;
   letter-spacing: 1px;
   font-weight: bold;
   opacity: 0.5;
 }
 
 .mainContainer .stats-panel .info-card .data {
-  line-height: 0;
+  line-height: 0px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .mainContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -269,24 +246,61 @@ body, .navbar li {
             flex-direction: column;
   }
   .mainContainer .image-panel {
+    -webkit-box-flex: 35%;
+        -ms-flex: 35%;
+            flex: 35%;
+    min-width: 422px;
+    min-height: 422px;
+  }
+  .mainContainer .info-panel {
+    -webkit-box-flex: 35%;
+        -ms-flex: 35%;
+            flex: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 40px;
+  }
+  .mainContainer .info-panel .content-container {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
   }
-  .mainContainer .info-panel {
-    -webkit-box-flex: 25%;
-        -ms-flex: 25%;
-            flex: 25%;
+  .mainContainer .info-panel .content-container .content {
+    width: 90%;
+  }
+  .mainContainer .info-panel .button-container {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+  .mainContainer .info-panel .button-container .buttons {
+    min-width: 281px;
+    min-height: 40px;
   }
   .mainContainer .stats-panel {
-    -webkit-box-flex: 25%;
-        -ms-flex: 25%;
-            flex: 25%;
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
   }
 }
 
 button {
   min-width: 350px;
   min-height: 48px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.links {
+  text-decoration: none;
+  margin-left: 33px;
+  color: #FFFFFF;
+  opacity: 0.75;
 }
 /*# sourceMappingURL=style.css.map */
