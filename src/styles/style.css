@@ -266,16 +266,6 @@ body, .navbar li {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .mainContainer img {
-    -webkit-transform: scale(0.63);
-            transform: scale(0.63);
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .mainContainer .image-panel {
-    height: 422px;
-    width: 422px;
-  }
   .mainContainer .info-panel {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
