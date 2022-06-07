@@ -2,10 +2,11 @@
 /* Background Colour */
 /* Planet Colours */
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700&display=swap");
 @import url("./_colours.scss");
 h1 {
   font-family: "Antonio", sans-serif;
+  font-weight: 500;
   font-size: 80px;
   line-height: 103px;
   color: #FFFFFF;
@@ -13,6 +14,7 @@ h1 {
 
 h2, .navbar .nav-title {
   font-family: "Antonio", sans-serif;
+  font-weight: 500;
   font-size: 40px;
   line-height: 52px;
   letter-spacing: -1.5px;
@@ -36,8 +38,8 @@ h4 {
 
 body, .navbar li {
   font-family: "League Spartan", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: light;
+  font-size: 16px;
   line-height: 25px;
 }
 
@@ -79,6 +81,7 @@ body, .navbar li {
   text-decoration: none;
   padding: 5px;
   color: #FFFFFF;
+  opacity: 0.75;
 }
 
 .navbar ul {
@@ -131,6 +134,9 @@ body, .navbar li {
   color: #FFFFFF;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 25px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .mainContainer .image-panel {
@@ -192,7 +198,7 @@ body, .navbar li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .mainContainer .info-panel .title {
@@ -222,11 +228,10 @@ body, .navbar li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 250px;
-  padding-top: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+  padding-top: 0px;
 }
 
 .mainContainer .stats-panel .info-card {
@@ -237,6 +242,23 @@ body, .navbar li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid #FFFFFF;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 100px;
+}
+
+.mainContainer .stats-panel .info-card .attribute {
+  font: "League Spartan", sans-serif;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.mainContainer .stats-panel .info-card .data {
+  line-height: 0;
 }
 
 @media (max-width: 768px) {

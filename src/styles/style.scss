@@ -40,6 +40,7 @@
             text-decoration: none;
             padding: 5px;
             color: $primaryText;
+            opacity: 0.75;
         }
         
     }
@@ -106,6 +107,9 @@
     flex-direction: row;
     color: $primaryText;
     flex-wrap: wrap;
+    padding: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 
     .image-panel {
         flex: 50%;
@@ -144,7 +148,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: left;
 
         .title {
             width: 50%;
@@ -163,13 +167,30 @@
     .stats-panel {
         flex: 100%;
         display: flex;
-        justify-content: space-between;
-        padding: 250px;
-        padding-top: 50px;
+        justify-content: space-around;
+        padding: 50px;
+        padding-top: 0px;
 
         .info-card {
             display: flex;
             flex-direction: column;
+            border: 1px solid $primaryText;
+            padding: 5px;
+            padding-left: 25px;
+            padding-right: 100px;
+
+            .attribute {
+                font: $spartan;
+                font-size: 11px;
+                line-height: 25px;
+                letter-spacing: 1px;
+                font-weight: bold;
+                opacity: 0.5;
+            }
+
+            .data {
+                line-height: 0;
+            }
         }
     }
 
