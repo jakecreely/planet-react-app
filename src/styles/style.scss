@@ -8,7 +8,7 @@
 }
 
 @mixin link-hover ($colour){
-    border-top: 3px solid $colour;
+    border-top: 4px solid $colour;
 }
 
 @mixin button-hover ($colour){
@@ -19,6 +19,7 @@
 .nav-container {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(white, 0.2);
 
     .nav-title {
         @extend h2;
@@ -33,6 +34,8 @@
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
+        margin-bottom: 27px;
+        
 
         .nav-title {
             padding-top: 32px;
@@ -41,7 +44,12 @@
         
         .navbar {
             height: auto;
-            padding-top: 39px;
+            margin-top: 29px;
+            margin-bottom: 27px;
+
+            a {
+                padding-top: 29px;
+            }
         }
     }   
 
@@ -50,7 +58,6 @@
 
 .navbar {
     color: $primaryText;
-    height: 5em;
     display: flex;
     align-items: center;
     margin-top: 0px;
@@ -63,13 +70,10 @@
         letter-spacing: 1px;
         display: inline;
         text-transform: uppercase;
-
-        
     }
 
     ul {
         height: 100%;
-        margin-top: 0;
         list-style-type: none;
     }
 
