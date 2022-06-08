@@ -16,6 +16,10 @@
     background-color: rgba($colour, 0.1);
 }
 
+.navbar-collapse {
+    display: none;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -31,6 +35,9 @@
         color: $primaryText
     }
 
+    .toggle-icon {
+        display: none
+    }
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
@@ -53,6 +60,45 @@
         }
     }   
 
+    @media screen and (max-width: 375px) {
+        flex-direction: row;
+        
+        // Change to 'navbar-hidden'
+        .navbar {
+            display: none;
+        }
+
+        .navbar-collapse {
+            display: none;
+        }
+
+        .toggle-icon {
+            display: block;
+            min-width: 24px;
+            min-height: 17px;
+            border: none;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-shown {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar-shown {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: $background;
+        width: 100vw;
+        height: 100vw;
+    }
 }
 
 
@@ -380,7 +426,7 @@
     }
 
     @media screen and (max-width: 375px) {
-        color: green;
+        z-index: -1;
     }
 
 }
