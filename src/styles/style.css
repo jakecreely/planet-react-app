@@ -4,6 +4,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700&display=swap");
 @import url("./_colours.scss");
+:export {
+  primaryText: #FFFFFF;
+  background: #070724;
+  mercury: #419EBB;
+  venus: #EDA249;
+  earth: #6D2ED5;
+  mars: #D14C32;
+  jupiter: #D83A34;
+  saturn: #CD5120;
+  uranus: #1EC1A2;
+  neptune: #2D68F0;
+}
+
 h1 {
   font-family: "Antonio", sans-serif;
   font-weight: 500;
@@ -74,7 +87,12 @@ body, .navbar li {
             flex-direction: column;
   }
   .nav-container .nav-title {
+    padding-top: 32px;
     text-align: center;
+  }
+  .nav-container .navbar {
+    height: auto;
+    padding-top: 39px;
   }
 }
 
@@ -318,6 +336,8 @@ body, .navbar li {
     padding-top: 11px;
     padding-bottom: 27px;
     gap: 69px;
+    min-width: 689px;
+    min-height: 253px;
   }
   .mainContainer .info-panel .content-container {
     -webkit-box-flex: 50%;
@@ -338,10 +358,86 @@ body, .navbar li {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
   }
   .mainContainer .info-panel .button-container .buttons {
     min-width: 281px;
     min-height: 40px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 14px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+  .mainContainer .info-panel .button-container .button-number {
+    padding-left: 20px;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 25px;
+    /* identical to box height, or 278% */
+    letter-spacing: 1.92857px;
+    text-transform: uppercase;
+  }
+  .mainContainer .info-panel .button-container .button-text {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 25px;
+    /* identical to box height, or 278% */
+    letter-spacing: 1.92857px;
+    text-transform: uppercase;
+  }
+  .mainContainer .info-panel .button-container #mercury-button:hover {
+    border-color: rgba(65, 158, 187, 0.2);
+    background-color: rgba(65, 158, 187, 0.1);
+  }
+  .mainContainer .info-panel .button-container #venus-button:hover {
+    border-color: rgba(237, 162, 73, 0.2);
+    background-color: rgba(237, 162, 73, 0.1);
+  }
+  .mainContainer .info-panel .button-container #earth-button:hover {
+    border-color: rgba(109, 46, 213, 0.2);
+    background-color: rgba(109, 46, 213, 0.1);
+  }
+  .mainContainer .info-panel .button-container #mars-button:hover {
+    border-color: rgba(209, 76, 50, 0.2);
+    background-color: rgba(209, 76, 50, 0.1);
+  }
+  .mainContainer .info-panel .button-container #jupiter-button:hover {
+    border-color: rgba(216, 58, 52, 0.2);
+    background-color: rgba(216, 58, 52, 0.1);
+  }
+  .mainContainer .info-panel .button-container #saturn-button:hover {
+    border-color: rgba(205, 81, 32, 0.2);
+    background-color: rgba(205, 81, 32, 0.1);
+  }
+  .mainContainer .info-panel .button-container #uranus-button:hover {
+    border-color: rgba(30, 193, 162, 0.2);
+    background-color: rgba(30, 193, 162, 0.1);
+  }
+  .mainContainer .info-panel .button-container #neptune-button:hover {
+    border-color: rgba(45, 104, 240, 0.2);
+    background-color: rgba(45, 104, 240, 0.1);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mainContainer {
+    color: green;
   }
 }
 

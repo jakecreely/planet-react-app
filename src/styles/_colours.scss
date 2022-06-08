@@ -13,3 +13,16 @@ $jupiter : #D83A34;
 $saturn : #CD5120;
 $uranus : #1EC1A2;
 $neptune : #2D68F0;
+
+:export {
+    primaryText: $primaryText;
+    background: $background;
+    mercury: $mercury;
+    venus: $venus;
+    earth: $earth;
+    mars: $mars;
+    jupiter: $jupiter;
+    saturn: $saturn;
+    uranus: $uranus;
+    neptune: $neptune;
+}

@@ -11,6 +11,11 @@
     border-top: 3px solid $colour;
 }
 
+@mixin button-hover ($colour){
+    border-color: rgba($colour, 0.2);
+    background-color: rgba($colour, 0.1);
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -30,7 +35,13 @@
         flex-direction: column;
 
         .nav-title {
+            padding-top: 32px;
             text-align: center;
+        }
+        
+        .navbar {
+            height: auto;
+            padding-top: 39px;
         }
     }   
 
@@ -249,6 +260,8 @@
             padding-top: 11px;
             padding-bottom: 27px;
             gap: 69px;
+            min-width: 689px;
+            min-height: 253px;
 
             .content-container {
                 flex: 50%;
@@ -268,14 +281,102 @@
 
             .button-container {
                 flex: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
 
                 .buttons {
                     min-width: 281px;
                     min-height: 40px;
+                    text-align: left;
+                    display: flex;
+                    gap: 14px;
+                    padding-top: 8px;
+                    padding-bottom: 7px;
+                }
+
+                .button-number {
+                    padding-left: 20px;
+                    text-align: center;
+
+                    font-family: $spartan;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 9px;
+                    line-height: 25px;
+                    /* identical to box height, or 278% */
+
+                    letter-spacing: 1.92857px;
+                    text-transform: uppercase;
+                }
+
+                .button-text {
+                    text-align: center;
+                    font-family: $spartan;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 9px;
+                    line-height: 25px;
+                    /* identical to box height, or 278% */
+
+                    letter-spacing: 1.92857px;
+                    text-transform: uppercase;
+                }
+
+                #mercury-button {
+                    &:hover {
+                        @include button-hover($mercury)
+                    }
+                }
+            
+                #venus-button {
+                    &:hover {
+                        @include button-hover($venus)
+                    }
+                }
+            
+                #earth-button {
+                    &:hover {
+                        @include button-hover($earth)
+                    }
+                }
+            
+                #mars-button {
+                    &:hover {
+                        @include button-hover($mars)
+                    }
+                }
+            
+                #jupiter-button {
+                    &:hover {
+                        @include button-hover($jupiter)
+                    }
+                }
+            
+                #saturn-button {
+                    &:hover {
+                        @include button-hover($saturn)
+                    }
+                }
+            
+                #uranus-button {
+                    &:hover {
+                        @include button-hover($uranus)
+                    }
+                }
+                
+                #neptune-button {
+                    &:hover {
+                        @include button-hover($neptune)
+                    }
                 }
             }
         }
 
+    }
+
+    @media screen and (max-width: 375px) {
+        color: green;
     }
 
 }
