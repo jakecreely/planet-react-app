@@ -201,18 +201,68 @@
     @media screen and (max-width: 768px) {
         flex-direction: column;
 
+        .image-panel {
+            min-height: 422px;
+            min-width: 422px;
+
+            img {
+                width:369px;
+                height: 369px;
+                object-fit: fill;
+            }
+        }
+
+        .stats-panel {
+            justify-content: normal;
+            padding: 40px;
+            gap: 11px;
+            padding-top: 0px;
+
+            .info-card {
+                padding: 0px;
+                min-width: 164px;
+                min-height: 88px;
+
+                .attribute {
+                    font-size: 8px;
+                    line-height: 16px;
+                    letter-spacing: 0.73px;
+                    padding-bottom: 6px;
+                    padding-top: 16px;
+                    padding-left: 15px;
+                }
+
+                .data {
+                  font-size: 24px;
+                  width: 100%;
+                  padding-left: 15px;
+                  padding-bottom: 16px;
+                }
+            }
+        }
 
         .info-panel {
             flex: 50%;
             display: flex;
             flex-direction: row;
             padding: 40px;
-            
+            padding-top: 11px;
+            padding-bottom: 27px;
+            gap: 69px;
+
             .content-container {
                 flex: 50%;
 
+                .title {
+                    font-size: 48px;
+                    line-height: 0px;
+                    padding-bottom: 24px;
+                }
+
                 .content {
-                    width: 90%;
+                    width: 100%;
+                    font-size: 11px;
+                    line-height: 22px;
                 }
             }
 
@@ -226,9 +276,6 @@
             }
         }
 
-        .stats-panel {
-            flex: 30%;
-        }
     }
 
 }
