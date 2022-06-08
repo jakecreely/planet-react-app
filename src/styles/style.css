@@ -116,6 +116,13 @@ body, .navbar li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    background-color: #070724;
+    margin: 0px;
+  }
+  .nav-container .nav-title {
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-bottom: 17px;
   }
   .nav-container .navbar {
     display: none;
@@ -128,6 +135,8 @@ body, .navbar li {
     min-width: 24px;
     min-height: 17px;
     border: none;
+    opacity: 0.25;
+    padding-right: 24px;
   }
 }
 
@@ -151,7 +160,22 @@ body, .navbar li {
         flex-wrap: wrap;
     background-color: #070724;
     width: 100vw;
-    height: 100vw;
+    margin: 0;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height, or 167% */
+    letter-spacing: 1.36364px;
+    text-transform: uppercase;
   }
 }
 
