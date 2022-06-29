@@ -20,6 +20,10 @@
     display: none;
 }
 
+.top-button-container {
+    display: none;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -101,7 +105,7 @@
 
 @media screen and (max-width: 375px) {
 
-    .button-container {
+    .top-button-container {
         display: flex;
         gap: 44px;
         justify-content: center;
@@ -150,7 +154,6 @@
         text-transform: uppercase;
     }
 }
-
 
 .navbar {
     color: $primaryText;

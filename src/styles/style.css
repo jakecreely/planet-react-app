@@ -66,6 +66,10 @@ body, .navbar li {
   display: none;
 }
 
+.top-button-container {
+  display: none;
+}
+
 .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +151,7 @@ body, .navbar li {
 }
 
 @media screen and (max-width: 375px) {
-  .button-container {
+  .top-button-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -156,14 +160,14 @@ body, .navbar li {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .button-container .buttons {
+  .top-button-container .buttons {
     padding: 0;
     min-width: 80px;
     max-width: 80px;
     min-height: 47px;
     max-height: 47px;
   }
-  .button-container .buttons .button-text {
+  .top-button-container .buttons .button-text {
     width: 80px;
   }
   .navbar-shown {

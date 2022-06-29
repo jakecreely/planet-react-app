@@ -32,7 +32,6 @@ function App() {
     <Router>
     <div className="app">
       <Routes>
-        {/* <Route path='/' exact render={() => <MainContainer />}/> */}
         <Route path='/:name' element={<MainContainer />}/>
       </Routes>
     </div>

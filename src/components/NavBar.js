@@ -98,7 +98,7 @@ function NavBar(props) {
         {
             props.layer === 'overview' 
             &&
-            <div className='button-container'>
+            <div className='top-button-container'>
             <button className='buttons' style={{backgroundColor: selectedColour, borderColor: selectedColour}}  id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("overview")}><div className='button-text'>Overview</div></button>
             <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("structure")}><div className='button-text'>Structure</div></button>
             <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Geology</div></button>
@@ -108,7 +108,7 @@ function NavBar(props) {
         {
             props.layer === 'structure' 
             &&
-            <div className='button-container'>
+            <div className='top-button-container'>
             <button className='buttons'  id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("overview")}><div className='button-text'>Overview</div></button>
             <button className='buttons' style={{backgroundColor: selectedColour, borderColor: selectedColour}} id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("structure")}><div className='button-text'>Structure</div></button>
             <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Geology</div></button>
@@ -118,7 +118,7 @@ function NavBar(props) {
         {
              props.layer === 'geology' 
              &&
-             <div className='button-container'>
+             <div className='top-button-container'>
              <button className='buttons'  id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("overview")}><div className='button-text'>Overview</div></button>
              <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("structure")}><div className='button-text'>Structure</div></button>
              <button className='buttons' style={{backgroundColor: selectedColour, borderColor: selectedColour}} id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Geology</div></button>
