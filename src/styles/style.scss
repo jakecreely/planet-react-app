@@ -100,6 +100,26 @@
 }
 
 @media screen and (max-width: 375px) {
+
+    .button-container {
+        display: flex;
+        gap: 44px;
+        justify-content: center;
+
+        .buttons {
+            padding: 0;
+            min-width: 80px;
+            max-width: 80px;
+
+            min-height: 47px;
+            max-height: 47px;
+
+            .button-text {
+                width: 80px;
+            }
+        }
+    }
+
     .navbar-shown {
         display: flex;
         position: absolute;
@@ -510,7 +530,7 @@
             }
 
             .button-container {
-                order: 1;
+                display: none;
             }
         }
 

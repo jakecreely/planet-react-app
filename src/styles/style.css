@@ -147,6 +147,25 @@ body, .navbar li {
 }
 
 @media screen and (max-width: 375px) {
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 44px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .button-container .buttons {
+    padding: 0;
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 47px;
+    max-height: 47px;
+  }
+  .button-container .buttons .button-text {
+    width: 80px;
+  }
   .navbar-shown {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -580,9 +599,7 @@ body, .navbar li {
     text-align: center;
   }
   .mainContainer .info-panel .button-container {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    display: none;
   }
   .mainContainer .stats-panel {
     -webkit-box-orient: vertical;

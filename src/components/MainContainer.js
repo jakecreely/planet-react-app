@@ -4,6 +4,7 @@ import BottomPanel from './BottomPanel';
 import ImagePanel from './ImagePanel';
 import SidePanel from './SidePanel';
 import {useParams} from "react-router-dom";
+import NavBar from './NavBar';
 
 function MainContainer() {
 
@@ -48,7 +49,9 @@ function MainContainer() {
     }
 
     if (!isLoading) {
-    return ( <div className='mainContainer'>
+    return ( <div>
+        <NavBar name={planetData[0].name} data={layerData} layer={selectedLayer} updateLayer={updateLayer}/> 
+        <div className='mainContainer'>
         <ImagePanel images={imageData} layer={selectedLayer}/>
         <SidePanel name={planetData[0].name} data={layerData} layer={selectedLayer} updateLayer={updateLayer}/>
         <BottomPanel data={{
@@ -57,6 +60,7 @@ function MainContainer() {
             "rotation": planetData[0].rotation,
             "temperature": planetData[0].temperature
         }}/>
+    </div>
     </div>)
     } else {
         <div>
