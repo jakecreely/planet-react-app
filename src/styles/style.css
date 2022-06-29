@@ -164,6 +164,7 @@ body, .navbar li {
     padding-top: 24px;
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 67px;
   }
   li {
     padding-bottom: 20px;
@@ -278,8 +279,8 @@ body, .navbar li {
 }
 
 .mainContainer img {
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .mainContainer .info-panel {
@@ -526,6 +527,22 @@ body, .navbar li {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .mainContainer .image-panel {
+    max-width: 256px;
+    max-height: 256px;
+    min-width: 256px;
+    min-height: 256px;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    padding-top: 39px;
+    padding-right: 61px;
+    padding-left: 58px;
+    padding-bottom: 24px;
+  }
+  .mainContainer .image-panel .the-image {
+    height: 100%;
+    width: 100%;
+  }
   .mainContainer .info-panel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -575,6 +592,8 @@ body, .navbar li {
     padding-top: 28px;
     padding-bottom: 47px;
     max-width: 327px;
+    padding-right: 24px;
+    padding-left: 24px;
     gap: 8px;
   }
   .mainContainer .stats-panel .info-card {

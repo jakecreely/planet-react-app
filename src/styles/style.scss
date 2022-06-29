@@ -113,6 +113,7 @@
         padding-top: 24px;
         padding-left: 24px;
         padding-right: 24px;
+        padding-bottom: 67px;
     }
 
     li {
@@ -219,10 +220,6 @@
         min-height: 668px;
 
 
-        .image {
-
-        }
-
         .overlay {
             position: relative;
             top: 0;
@@ -235,7 +232,7 @@
     }
 
     img {
-        object-fit: none;
+        object-fit: fill;
     }
 
     .info-panel {
@@ -457,6 +454,24 @@
     @media screen and (max-width: 375px) {
         display: flex;
         flex-direction: row;
+
+        .image-panel {
+            max-width: 256px;
+            max-height: 256px;
+            min-width: 256px;
+            min-height: 256px;
+            object-fit: scale-down;
+
+            padding-top: 39px;
+            padding-right: 61px;
+            padding-left: 58px;
+            padding-bottom: 24px;
+
+            .the-image {
+                height: 100%;
+                width: 100%;
+            }
+        }
         
         .info-panel {
             flex-direction: column;
@@ -504,6 +519,8 @@
             padding-top: 28px;
             padding-bottom: 47px;
             max-width: 327px;
+            padding-right: 24px;
+            padding-left: 24px;
             gap: 8px;
 
             .info-card {

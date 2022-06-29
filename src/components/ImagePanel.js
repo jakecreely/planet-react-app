@@ -18,12 +18,12 @@ function ImagePanel(props) {
             {/* <img src={props.images[0]} className='image'></img> */}
             <div className='image' style={style}></div>
             <div className='overlay'>
-                <img src={props.images[1]}></img>
+                <img className='the-image' src={props.images[1]}></img>
             </div>
         </div>)
     } else {
         return (<div className='image-panel'>
-            <img src={props.images}></img>
+            <img className='the-image' src={props.images}></img>
         </div>)
     }
 }
