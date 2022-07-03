@@ -260,6 +260,9 @@
 
         flex-shrink: 3;
 
+        display: flex;
+        vertical-align: middle;
+
         .overlay {
             position: relative;
             top: 0;
@@ -274,6 +277,7 @@
             display: block;
             max-width: 100%;
             height: auto;
+            align-self: center;
         }
     }
 
@@ -303,6 +307,7 @@
         .button-container {
             max-width: 25vw;
             max-height: 53vh;
+            width: 100%;
         }
 
     }
@@ -316,6 +321,7 @@
 
         margin-top: 5vh;
         gap: 2vw;
+        flex-wrap: wrap;
 
         .info-card {
             display: flex;
@@ -325,7 +331,7 @@
             padding-left: 25px;
             padding-right: 100px;
 
-            max-width: 9vw;
+            max-width: 17vw;
 
             .attribute {
                 font: $spartan;
@@ -333,10 +339,13 @@
                 letter-spacing: 1px;
                 font-weight: bold;
                 opacity: 0.5;
+
+                padding-top: 2vh;
             }
 
             .data {
                 margin: 0;
+                padding-bottom: 3vh;
             }
             
         }
@@ -610,8 +619,8 @@
 }
 
 button {
-    min-width: 350px;
-    min-height: 48px;
+    width: 100%;
+    margin-bottom: 2vh;
     background-color: transparent;
     border: 1px solid $primaryText;
     color: $primaryText;
