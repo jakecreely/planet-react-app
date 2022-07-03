@@ -8,7 +8,7 @@
 }
 
 @mixin link-hover ($colour){
-    border-top: 4px solid $colour;
+    border-bottom: 4px solid $colour;
 }
 
 @mixin button-hover ($colour){
@@ -29,6 +29,9 @@
     justify-content: space-between;
     border-bottom: 1px solid rgba(white, 0.2);
 
+    min-height: 85px;
+    max-height: 85px;
+
     .nav-title {
         @extend h2;
         // padding-right: 50%;
@@ -36,7 +39,10 @@
         font-size: 28px;
         line-height: 30px;
         letter-spacing: -1.05px;
-        color: $primaryText
+        color: $primaryText;
+        padding-top: 22px;
+        padding-left: 32px;
+        padding-bottom: 27px;
     }
 
     .toggle-icon {
@@ -47,20 +53,23 @@
         flex-direction: column;
         margin-bottom: 27px;
         
+        min-height: none;
+        max-height: none;
+    
 
         .nav-title {
             padding-top: 32px;
+            padding-bottom: 0;
             text-align: center;
         }
         
         .navbar {
-            height: auto;
-            margin-top: 29px;
-            margin-bottom: 27px;
+            height: 100%;
 
-            a {
-                padding-top: 29px;
-            }
+            min-height: none;
+            max-height: none;
+
+
         }
     }   
 
@@ -73,6 +82,7 @@
             padding-top: 16px;
             padding-left: 24px;
             padding-bottom: 17px;
+            line-height: 52px;
         }
 
         // Change to 'navbar-hidden'
@@ -161,6 +171,12 @@
     align-items: center;
     margin-top: 0px;
 
+    padding-right: 40px;
+    margin: 0;
+    height: 100%;
+    min-height: 85px;
+    max-height: 85px;
+
     li {
         @extend body;
         font-weight: 700;
@@ -234,14 +250,15 @@
     padding-top: 0px;
     padding-bottom: 0px;
 
-    .image-panel {
-        flex: 50%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        min-width: 668px;
-        min-height: 668px;
 
+    .image-panel {
+        max-width: 65vw;
+
+        margin-left: 10vw;
+        margin-top: 9vh;
+        margin-right: 11vw;
+
+        flex-shrink: 3;
 
         .overlay {
             position: relative;
@@ -252,29 +269,40 @@
             height: 100%;
             width: 100%;
         }
-    }
 
-    img {
-        object-fit: fill;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
     }
 
     .info-panel {
-        flex: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: left;
 
+
         .title {
-            width: 50%;
             align-items: center;
             justify-content: center;
+            line-height: 15vh;
         }
 
         .content {
-            width: 50%;
             align-items: center;
             justify-content: center;
+            padding-bottom: 5vh;
+
+            max-width: 25vw;
+            max-height: 53vh;
+            min-height: 25vh;
+        }
+
+        .button-container {
+            max-width: 25vw;
+            max-height: 53vh;
         }
 
     }
@@ -384,6 +412,8 @@
                 flex-direction: column;
                 gap: 16px;
 
+
+                
                 .buttons {
                     min-width: 281px;
                     min-height: 40px;

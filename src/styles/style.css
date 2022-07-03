@@ -78,6 +78,8 @@ body, .navbar li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 85px;
+  max-height: 85px;
 }
 
 .nav-container .nav-title {
@@ -86,6 +88,9 @@ body, .navbar li {
   line-height: 30px;
   letter-spacing: -1.05px;
   color: #FFFFFF;
+  padding-top: 22px;
+  padding-left: 32px;
+  padding-bottom: 27px;
 }
 
 .nav-container .toggle-icon {
@@ -99,18 +104,18 @@ body, .navbar li {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 27px;
+    min-height: none;
+    max-height: none;
   }
   .nav-container .nav-title {
     padding-top: 32px;
+    padding-bottom: 0;
     text-align: center;
   }
   .nav-container .navbar {
-    height: auto;
-    margin-top: 29px;
-    margin-bottom: 27px;
-  }
-  .nav-container .navbar a {
-    padding-top: 29px;
+    height: 100%;
+    min-height: none;
+    max-height: none;
   }
 }
 
@@ -127,6 +132,7 @@ body, .navbar li {
     padding-top: 16px;
     padding-left: 24px;
     padding-bottom: 17px;
+    line-height: 52px;
   }
   .nav-container .navbar {
     display: none;
@@ -212,6 +218,11 @@ body, .navbar li {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0px;
+  padding-right: 40px;
+  margin: 0;
+  height: 100%;
+  min-height: 85px;
+  max-height: 85px;
 }
 
 .navbar li {
@@ -229,35 +240,35 @@ body, .navbar li {
 }
 
 .navbar #mercury-link:hover {
-  border-top: 4px solid #419EBB;
+  border-bottom: 4px solid #419EBB;
 }
 
 .navbar #venus-link:hover {
-  border-top: 4px solid #EDA249;
+  border-bottom: 4px solid #EDA249;
 }
 
 .navbar #earth-link:hover {
-  border-top: 4px solid #6D2ED5;
+  border-bottom: 4px solid #6D2ED5;
 }
 
 .navbar #mars-link:hover {
-  border-top: 4px solid #D14C32;
+  border-bottom: 4px solid #D14C32;
 }
 
 .navbar #jupiter-link:hover {
-  border-top: 4px solid #D83A34;
+  border-bottom: 4px solid #D83A34;
 }
 
 .navbar #saturn-link:hover {
-  border-top: 4px solid #CD5120;
+  border-bottom: 4px solid #CD5120;
 }
 
 .navbar #uranus-link:hover {
-  border-top: 4px solid #1EC1A2;
+  border-bottom: 4px solid #1EC1A2;
 }
 
 .navbar #neptune-link:hover {
-  border-top: 4px solid #2D68F0;
+  border-bottom: 4px solid #2D68F0;
 }
 
 .mainContainer {
@@ -276,19 +287,12 @@ body, .navbar li {
 }
 
 .mainContainer .image-panel {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  min-width: 668px;
-  min-height: 668px;
+  max-width: 65vw;
+  margin-left: 10vw;
+  margin-top: 9vh;
+  margin-right: 11vw;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
 }
 
 .mainContainer .image-panel .overlay {
@@ -301,15 +305,13 @@ body, .navbar li {
   width: 100%;
 }
 
-.mainContainer img {
-  -o-object-fit: fill;
-     object-fit: fill;
+.mainContainer .image-panel img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .mainContainer .info-panel {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,23 +326,31 @@ body, .navbar li {
 }
 
 .mainContainer .info-panel .title {
-  width: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  line-height: 15vh;
 }
 
 .mainContainer .info-panel .content {
-  width: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 5vh;
+  max-width: 25vw;
+  max-height: 53vh;
+  min-height: 25vh;
+}
+
+.mainContainer .info-panel .button-container {
+  max-width: 25vw;
+  max-height: 53vh;
 }
 
 .mainContainer .stats-panel {
