@@ -364,6 +364,8 @@ body, .navbar li {
       justify-content: space-around;
   padding: 50px;
   padding-top: 0px;
+  margin-top: 5vh;
+  gap: 2vw;
 }
 
 .mainContainer .stats-panel .info-card {
@@ -378,6 +380,7 @@ body, .navbar li {
   padding: 5px;
   padding-left: 25px;
   padding-right: 100px;
+  max-width: 9vw;
 }
 
 .mainContainer .stats-panel .info-card .attribute {
@@ -389,7 +392,7 @@ body, .navbar li {
 }
 
 .mainContainer .stats-panel .info-card .data {
-  line-height: 0px;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
