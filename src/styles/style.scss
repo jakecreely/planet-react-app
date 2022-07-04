@@ -253,10 +253,13 @@
 
     .image-panel {
         max-width: 65vw;
+        min-width: 65vw;
+        height: auto;
 
-        margin-left: 10vw;
-        margin-top: 9vh;
-        margin-right: 11vw;
+        // margin-left: 10vw;
+        // margin-top: 9vh;
+        // margin-right: 11vw;
+        justify-content: center;
 
         flex-shrink: 3;
 
@@ -355,12 +358,13 @@
         flex-direction: column;
 
         .image-panel {
-            min-height: 422px;
-            min-width: 422px;
+            min-width: unset;
+            max-width: 100%;
+
+            min-height: 41vh;
+            max-height: 41vh;
 
             img {
-                width:369px;
-                height: 369px;
                 object-fit: fill;
             }
         }

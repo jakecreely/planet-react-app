@@ -288,9 +288,11 @@ body, .navbar li {
 
 .mainContainer .image-panel {
   max-width: 65vw;
-  margin-left: 10vw;
-  margin-top: 9vh;
-  margin-right: 11vw;
+  min-width: 65vw;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-negative: 3;
       flex-shrink: 3;
   display: -webkit-box;
@@ -415,12 +417,12 @@ body, .navbar li {
             flex-direction: column;
   }
   .mainContainer .image-panel {
-    min-height: 422px;
-    min-width: 422px;
+    min-width: unset;
+    max-width: 100%;
+    min-height: 41vh;
+    max-height: 41vh;
   }
   .mainContainer .image-panel img {
-    width: 369px;
-    height: 369px;
     -o-object-fit: fill;
        object-fit: fill;
   }
