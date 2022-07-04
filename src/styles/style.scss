@@ -364,8 +364,12 @@
             min-height: 41vh;
             max-height: 41vh;
 
+            margin-top: 3vh;
+
+
             img {
-                object-fit: fill;
+                object-fit: contain;
+                align-self: unset;
             }
         }
 

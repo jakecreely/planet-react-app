@@ -421,10 +421,14 @@ body, .navbar li {
     max-width: 100%;
     min-height: 41vh;
     max-height: 41vh;
+    margin-top: 3vh;
   }
   .mainContainer .image-panel img {
-    -o-object-fit: fill;
-       object-fit: fill;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
   }
   .mainContainer .stats-panel {
     -webkit-box-pack: normal;
