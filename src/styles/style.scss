@@ -366,7 +366,6 @@
 
             margin-top: 3vh;
 
-
             img {
                 object-fit: contain;
                 align-self: unset;
@@ -410,55 +409,60 @@
             padding-top: 11px;
             padding-bottom: 27px;
             gap: 69px;
-            min-width: 689px;
-            min-height: 253px;
 
             .content-container {
-                flex: 50%;
 
                 .title {
-                    font-size: 48px;
+                    font-size: 3rem;
                     line-height: 0px;
                     padding-bottom: 24px;
                 }
 
                 .content {
                     width: 100%;
-                    font-size: 11px;
-                    line-height: 22px;
+                    font-size: 0.6875rem;
+                    line-height: 1.375rem;
+
+                    min-width: unset;
+                    min-height: unset;
+                    max-width: unset;
+                    max-height: unset;
                 }
             }
 
             .button-container {
-                flex: 50%;
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
 
+                max-width: unset;
+                max-height: unset;
 
+                gap: 1rem;
                 
                 .buttons {
-                    min-width: 281px;
-                    min-height: 40px;
                     text-align: left;
                     display: flex;
-                    gap: 14px;
-                    padding-top: 8px;
-                    padding-bottom: 7px;
+                    gap: 1rem;
+
+                    width: 100%;
+
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    padding-left: 7%;
+                    padding-right: 57%;
                 }
 
                 .button-number {
-                    padding-left: 20px;
                     text-align: center;
 
                     font-family: $spartan;
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 9px;
-                    line-height: 25px;
+                    font-size: 0.5625rem;
+                    line-height: 1.5625rem;
                     /* identical to box height, or 278% */
 
-                    letter-spacing: 1.92857px;
+                    letter-spacing: 0.125rem;
                     text-transform: uppercase;
                 }
 
@@ -467,11 +471,11 @@
                     font-family: $spartan;
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 9px;
-                    line-height: 25px;
+                    font-size: 0.5625rem;
+                    line-height: 1.5625rem;
                     /* identical to box height, or 278% */
 
-                    letter-spacing: 1.92857px;
+                    letter-spacing: 0.125rem;
                     text-transform: uppercase;
                 }
 

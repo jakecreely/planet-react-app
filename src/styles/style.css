@@ -472,28 +472,22 @@ body, .navbar li {
     padding-top: 11px;
     padding-bottom: 27px;
     gap: 69px;
-    min-width: 689px;
-    min-height: 253px;
-  }
-  .mainContainer .info-panel .content-container {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
   }
   .mainContainer .info-panel .content-container .title {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 0px;
     padding-bottom: 24px;
   }
   .mainContainer .info-panel .content-container .content {
     width: 100%;
-    font-size: 11px;
-    line-height: 22px;
+    font-size: 0.6875rem;
+    line-height: 1.375rem;
+    min-width: unset;
+    min-height: unset;
+    max-width: unset;
+    max-height: unset;
   }
   .mainContainer .info-panel .button-container {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -501,29 +495,31 @@ body, .navbar li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 16px;
+    max-width: unset;
+    max-height: unset;
+    gap: 1rem;
   }
   .mainContainer .info-panel .button-container .buttons {
-    min-width: 281px;
-    min-height: 40px;
     text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 14px;
-    padding-top: 8px;
-    padding-bottom: 7px;
+    gap: 1rem;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 7%;
+    padding-right: 57%;
   }
   .mainContainer .info-panel .button-container .button-number {
-    padding-left: 20px;
     text-align: center;
     font-family: "League Spartan", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 9px;
-    line-height: 25px;
+    font-size: 0.5625rem;
+    line-height: 1.5625rem;
     /* identical to box height, or 278% */
-    letter-spacing: 1.92857px;
+    letter-spacing: 0.125rem;
     text-transform: uppercase;
   }
   .mainContainer .info-panel .button-container .button-text {
@@ -531,10 +527,10 @@ body, .navbar li {
     font-family: "League Spartan", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 9px;
-    line-height: 25px;
+    font-size: 0.5625rem;
+    line-height: 1.5625rem;
     /* identical to box height, or 278% */
-    letter-spacing: 1.92857px;
+    letter-spacing: 0.125rem;
     text-transform: uppercase;
   }
   .mainContainer .info-panel .button-container #mercury-button:hover {
