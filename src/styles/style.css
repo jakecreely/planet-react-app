@@ -164,20 +164,50 @@ body, .navbar li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 44px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2.75rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.2);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .top-button-container .buttons {
-    padding: 0;
-    min-width: 80px;
-    max-width: 80px;
-    min-height: 47px;
-    max-height: 47px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 4.5rem;
+    background-color: transparent;
   }
-  .top-button-container .buttons .button-text {
-    width: 80px;
+  .top-button-container #mercury-button--mobile:active {
+    border-bottom: 4px solid #419EBB;
+  }
+  .top-button-container #venus-button--mobile:hover {
+    border-bottom: 4px solid #EDA249;
+  }
+  .top-button-container #earth-button--mobile:hover {
+    border-bottom: 4px solid #6D2ED5;
+  }
+  .top-button-container #mars-button--mobile:hover {
+    border-bottom: 4px solid #D14C32;
+  }
+  .top-button-container #jupiter-button--mobile:hover {
+    border-bottom: 4px solid #D83A34;
+  }
+  .top-button-container #saturn-button--mobile:hover {
+    border-bottom: 4px solid #CD5120;
+  }
+  .top-button-container #uranus-button--mobile:hover {
+    border-bottom: 4px solid #1EC1A2;
+  }
+  .top-button-container #neptune-button--mobile:hover {
+    border-bottom: 4px solid #2D68F0;
   }
   .navbar-shown {
     display: -webkit-box;
@@ -580,10 +610,8 @@ body, .navbar li {
             flex-direction: row;
   }
   .mainContainer .image-panel {
-    min-width: 16rem;
-    min-height: 16rem;
-    max-width: 16rem;
-    max-height: 16rem;
+    min-width: 6.875rem;
+    min-height: 6.875rem;
     -o-object-fit: scale-down;
        object-fit: scale-down;
     padding-top: 2.5rem;
@@ -669,7 +697,6 @@ body, .navbar li {
 
 button {
   width: 100%;
-  margin-bottom: 2vh;
   background-color: transparent;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
