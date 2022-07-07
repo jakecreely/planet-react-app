@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Planets Fact Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Front End Mentor (https://www.frontendmentor.io) provides the assets and the figma design files for this project. The implementation choices were up to me.
 
-## Available Scripts
+## User Requirements
 
-In the project directory, you can run:
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each planet page and toggle between the "Overview", "Internal Structure", and "Surface Geology" tabs
 
-### `npm start`
+## Tools Used
+- React
+- React Router
+- SASS
+- Figma
+- Git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## My approach
+This was the first time I had approached a project with the necessary design files. I started by trying to directly translate the design to code, although this looked fine on paper. There were a number of responsiveness issues and so my main goal became understanding how to build responsive websites. This lead me to learn about the different units and how the design files can be used. I also used SASS for the first time which I was able to grasp and felt sped up development time. I still feel I need to get to grips with structuring scss files which will be one of my goals for my next project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### What I learnt
+Having the assets and design files to hand really helped to simulate a working project environment. My aim was to focus on developing this project and learning from it when it gets tough rather than moving onto another project. SASS and relative units in CSS were my main takeaways from this project, using both to implement responsiveness at different screen sizes. I used React as I wanted to continue using it for project although this project didn't use it much, states and react-router were nice to use.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Next Steps
+- Replace pixel units with relative units where possible
+- Have images sizes related to the other planets on smaller screen sizes
+- Restructure SASS files to a more readable manner (rather than one large file)
