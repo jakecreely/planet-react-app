@@ -101,9 +101,6 @@ body, .navbar li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 27px;
-    min-height: none;
-    max-height: none;
   }
   .nav-container .nav-title {
     padding-top: 2rem;
@@ -111,8 +108,9 @@ body, .navbar li {
   }
   .nav-container .navbar {
     height: 100%;
-    min-height: none;
-    max-height: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -319,12 +317,12 @@ body, .navbar li {
 .mainContainer .image-panel {
   width: 100%;
   height: auto;
-  padding-left: 9rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+  padding-left: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -368,8 +366,8 @@ body, .navbar li {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
-  padding-left: 8%;
-  padding-right: 12%;
+  padding-left: 2rem;
+  padding-right: 2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -481,6 +479,7 @@ body, .navbar li {
     min-width: unset;
     max-width: 100%;
     max-height: 19.75rem;
+    padding-bottom: 4.8125rem;
   }
   .mainContainer .image-panel img {
     -o-object-fit: contain;
@@ -566,13 +565,7 @@ body, .navbar li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 1rem;
     width: 100%;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 7%;
-    padding-right: 57%;
-    min-width: 7rem;
   }
   .mainContainer .info-panel .button-container .button-number {
     text-align: center;

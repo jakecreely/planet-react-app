@@ -55,11 +55,7 @@
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        margin-bottom: 27px;
-        
-        min-height: none;
-        max-height: none;
-    
+
 
         .nav-title {
             padding-top: 2rem;
@@ -69,8 +65,8 @@
         .navbar {
             height: 100%;
 
-            min-height: none;
-            max-height: none;
+            justify-content: center;
+
 
             flex-wrap: wrap;
 
@@ -311,9 +307,10 @@
         width: 100%;
         height: auto;
 
-        padding-left: 9rem;
         box-sizing: border-box;
         flex: 50%;
+
+        padding-left: 2rem;
 
         justify-content: center;
 
@@ -345,8 +342,8 @@
         text-align: left;
 
         flex: 50%;
-        padding-left: 8%;
-        padding-right: 12%;
+        padding-left: 2rem;
+        padding-right: 2rem;
         box-sizing: border-box;
 
         .title {
@@ -434,6 +431,8 @@
 
             max-height: 19.75rem;
 
+            padding-bottom: 4.8125rem;
+
 
             img {
                 object-fit: contain;
@@ -513,16 +512,8 @@
                 .buttons {
                     text-align: left;
                     display: flex;
-                    gap: 1rem;
 
                     width: 100%;
-
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    padding-left: 7%;
-                    padding-right: 57%;
-
-                    min-width: 7rem;
                 }
 
                 .button-number {
