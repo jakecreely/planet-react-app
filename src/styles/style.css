@@ -620,7 +620,6 @@ body, .navbar li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0;
     gap: 0;
     width: 100%;
   }
