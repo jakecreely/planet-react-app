@@ -15,7 +15,7 @@ function SidePanel (props) {
         <h1 className='title'>{props.name.toUpperCase()}</h1>
         <body className='content'>
             <div style={{paddingBottom: '32px'}}>{props.data.content}</div>
-            <div>Source: <a className='links' style={{marginLeft: 0}} href={props.data.source}>Wikipedia <img src='assets/icon-source.svg'></img></a></div>
+            <div>Source: <a className='links' style={{marginLeft: 0, textDecorationStyle: 'underline'}} href={props.data.source}>Wikipedia <img src='assets/icon-source.svg'></img></a></div>
         </body>
         </div>
         {

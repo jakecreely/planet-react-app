@@ -101,7 +101,7 @@ function NavBar(props) {
             <div className='top-button-container'>
             <button className='buttons' style={{borderBottom: selectedColour + ' 0.25rem solid'}}  id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("overview")}><div className='button-text'>Overview</div></button>
             <button className='buttons' id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("structure")}><div className='button-text'>Structure</div></button>
-            <button className='buttons' id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Geology</div></button>
+            <button className='buttons' id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Surface</div></button>
             </div>
         }
 
@@ -111,7 +111,7 @@ function NavBar(props) {
             <div className='top-button-container'>
             <button className='buttons'  id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("overview")}><div className='button-text'>Overview</div></button>
             <button className='buttons' style={{borderBottom: selectedColour + ' 0.25rem solid'}} id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("structure")}><div className='button-text'>Structure</div></button>
-            <button className='buttons' id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Geology</div></button>
+            <button className='buttons' id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Surface</div></button>
             </div>
         }
 
@@ -121,7 +121,7 @@ function NavBar(props) {
              <div className='top-button-container'>
              <button className='buttons'  id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("overview")}><div className='button-text'>Overview</div></button>
              <button className='buttons' id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("structure")}><div className='button-text'>Structure</div></button>
-             <button className='buttons' style={{borderBottom: selectedColour + ' 0.25rem solid'}} id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Geology</div></button>
+             <button className='buttons' style={{borderBottom: selectedColour + ' 0.25rem solid'}} id={props.name.toLowerCase() + '-button--mobile'} onClick={() => props.updateLayer("geology")}><div className='button-text'>Surface</div></button>
             </div>
             }
 
