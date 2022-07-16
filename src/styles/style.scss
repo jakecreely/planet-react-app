@@ -317,6 +317,8 @@
         display: flex;
         vertical-align: middle;
 
+        flex-direction: column;
+        
         .overlay {
             position: relative;
             top: 0;
@@ -325,6 +327,12 @@
             right: 0;
             height: 100%;
             width: 100%;
+
+            .the-image {
+                margin: auto;
+                margin-top: -15.625rem;
+                transform: scale(0.5);
+            }
         }
 
         img {

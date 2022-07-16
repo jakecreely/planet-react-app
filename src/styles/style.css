@@ -330,6 +330,10 @@ body, .navbar li {
   display: -ms-flexbox;
   display: flex;
   vertical-align: middle;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mainContainer .image-panel .overlay {
@@ -340,6 +344,13 @@ body, .navbar li {
   right: 0;
   height: 100%;
   width: 100%;
+}
+
+.mainContainer .image-panel .overlay .the-image {
+  margin: auto;
+  margin-top: -15.625rem;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 .mainContainer .image-panel img {
