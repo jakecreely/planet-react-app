@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/planet-react-app/static/css/main.85bae208.css",
+    "main.js": "/planet-react-app/static/js/main.3abe27a3.js",
+    "static/js/787.b701888c.chunk.js": "/planet-react-app/static/js/787.b701888c.chunk.js",
+    "static/media/background-stars.svg": "/planet-react-app/static/media/background-stars.f6233a6a8d2351c57f2b.svg",
+    "index.html": "/planet-react-app/index.html",
+    "main.85bae208.css.map": "/planet-react-app/static/css/main.85bae208.css.map",
+    "main.3abe27a3.js.map": "/planet-react-app/static/js/main.3abe27a3.js.map",
+    "787.b701888c.chunk.js.map": "/planet-react-app/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85bae208.css",
+    "static/js/main.3abe27a3.js"
+  ]
+}
