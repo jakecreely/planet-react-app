@@ -1,0 +1,70 @@
+@mixin link-hover ($colour){
+    border-bottom: 4px solid $colour;
+}
+
+@mixin button-hover ($colour){
+    border-color: rgba($colour, 0.2);
+    background-color: rgba($colour, 0.1);
+}
+
+@mixin button-hover--mobile ($colour){
+    border-bottom: 4px solid $colour;
+}
+
+$primaryText: #FFFFFF;
+
+$background: #070724; 
+
+$mercury: #419EBB;
+$venus: #EDA249;
+$earth: #6D2ED5;
+$mars: #D14C32;
+$jupiter: #D83A34;
+$saturn: #CD5120;
+$uranus: #1EC1A2;
+$neptune: #2D68F0;
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700&display=swap');
+
+$antonio-medium:  'Antonio', sans-serif;
+$spartan: 'League Spartan', sans-serif;
+
+h1 {
+    font-family: $antonio-medium;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 103px;
+    color: $primaryText
+}
+
+h2 {
+    font-family: $antonio-medium;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+}
+
+h3 {
+    font-family: $spartan;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.6px;
+}
+
+h4 {
+    font-family: $spartan;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+body {
+    font-family: $spartan;
+    font-weight: light;
+    font-size: 16px;
+    line-height: 25px;
+}
