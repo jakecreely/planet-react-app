@@ -163,13 +163,13 @@ body, .navbar li {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 2.75rem;
+    gap: 10%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.2);
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .top-button-container .buttons {
     padding-top: 1.25rem;
@@ -490,6 +490,7 @@ body, .navbar li {
     min-width: unset;
     max-width: 100%;
     padding-bottom: 4.8125rem;
+    padding-right: 2rem;
   }
   .mainContainer .image-panel img {
     -o-object-fit: contain;
@@ -610,6 +611,7 @@ body, .navbar li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-top: 0;
   }
   .mainContainer .image-panel {
     min-width: 6.875rem;
