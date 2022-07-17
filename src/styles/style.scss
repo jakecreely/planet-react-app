@@ -34,10 +34,8 @@
     justify-content: space-between;
     border-bottom: 0.0625rem solid rgba(white, 0.2);
 
-
     .nav-title {
         @extend h2;
-        // padding-right: 50%;
         font-weight: 400;
         font-size: 1.75rem;
         line-height: 2.25rem;
@@ -85,7 +83,6 @@
             line-height: 3.25rem;
         }
 
-        // Change to 'navbar-hidden'
         .navbar {
             display: none;
         }
@@ -140,7 +137,7 @@
         }
 
         #mercury-button--mobile {
-            &:active {
+            &:hover {
                 @include button-hover--mobile($mercury)
             }
         }
@@ -214,7 +211,7 @@
         font-weight: 700;
         font-size: 15px;
         line-height: 25px;
-        /* identical to box height, or 167% */
+
         letter-spacing: 1.36364px;
         text-transform: uppercase;
     }
@@ -437,7 +434,6 @@
             min-width: unset;
             max-width: 100%;
 
-            // max-height: 19.75rem;
 
             padding-bottom: 4.8125rem;
 
@@ -446,7 +442,6 @@
 
             img {
                 object-fit: contain;
-                // align-self: unset;
             }
 
             .overlay {
@@ -538,7 +533,6 @@
                     font-weight: 700;
                     font-size: 0.5625rem;
                     line-height: 1.5625rem;
-                    /* identical to box height, or 278% */
 
                     letter-spacing: 0.125rem;
                     text-transform: uppercase;
@@ -551,7 +545,6 @@
                     font-weight: 700;
                     font-size: 0.5625rem;
                     line-height: 1.5625rem;
-                    /* identical to box height, or 278% */
 
                     letter-spacing: 0.125rem;
                     text-transform: uppercase;
@@ -607,7 +600,7 @@
                     font-weight: 400;
                     font-size: 2.5rem;
                     line-height: 3.25rem;
-                    /* identical to box height */
+
                     text-transform: uppercase;
                 }
 
@@ -617,7 +610,7 @@
                     font-weight: 400;
                     font-size: 0.6875rem;
                     line-height: 1.375rem;
-                    /* or 200% */
+
 
                     text-align: center;
                 }
