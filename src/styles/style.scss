@@ -1,25 +1,10 @@
-@import './colours';
-@import './fonts';
+@import './_base';
 
 .app {
     background-color: $background;
     background-image: url('../../public/assets/background-stars.svg');
     overflow: auto;
 }
-
-@mixin link-hover ($colour){
-    border-bottom: 4px solid $colour;
-}
-
-@mixin button-hover ($colour){
-    border-color: rgba($colour, 0.2);
-    background-color: rgba($colour, 0.1);
-}
-
-@mixin button-hover--mobile ($colour){
-    border-bottom: 4px solid $colour;
-}
-
 
 .navbar-collapse {
     display: none;

@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'react-dom';
-import colours from '../styles/_colours.scss';
 
 function SidePanel (props) {
-
-    const [selectedColour, setColour] = useState(null)
-
-    useEffect(() => {
-        setColour(colours[props.name.toLowerCase()])
-    }, [props.name])
 
     return (<div className='info-panel'>
         <div className='content-container'>
@@ -22,7 +15,7 @@ function SidePanel (props) {
             props.layer === 'overview' 
             &&
             <div className='button-container'>
-            <button className='buttons' style={{backgroundColor: selectedColour, borderColor: selectedColour}}  id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("overview")}><div className='button-number'>01</div><div className='button-text'>Overview</div></button>
+            <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("overview")}><div className='button-number'>01</div><div className='button-text'>Overview</div></button>
             <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("structure")}><div className='button-number'>02</div><div className='button-text'>Structure</div></button>
             <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("geology")}><div className='button-number'>03</div><div className='button-text'>Geology</div></button>
             </div>
@@ -33,7 +26,7 @@ function SidePanel (props) {
             &&
             <div className='button-container'>
             <button className='buttons'  id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("overview")}><div className='button-number'>01</div><div className='button-text'>Overview</div></button>
-            <button className='buttons' style={{backgroundColor: selectedColour, borderColor: selectedColour}} id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("structure")}><div className='button-number'>02</div><div className='button-text'>Structure</div></button>
+            <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("structure")}><div className='button-number'>02</div><div className='button-text'>Structure</div></button>
             <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("geology")}><div className='button-number'>03</div><div className='button-text'>Geology</div></button>
             </div>
         }
@@ -44,7 +37,7 @@ function SidePanel (props) {
              <div className='button-container'>
              <button className='buttons'  id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("overview")}><div className='button-number'>01</div><div className='button-text'>Overview</div></button>
              <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("structure")}><div className='button-number'>02</div><div className='button-text'>Structure</div></button>
-             <button className='buttons' style={{backgroundColor: selectedColour, borderColor: selectedColour}} id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("geology")}><div className='button-number'>03</div><div className='button-text'>Geology</div></button>
+             <button className='buttons' id={props.name.toLowerCase() + '-button'} onClick={() => props.updateLayer("geology")}><div className='button-number'>03</div><div className='button-text'>Geology</div></button>
             </div>
             }
     </div>)
