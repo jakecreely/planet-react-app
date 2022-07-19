@@ -4,8 +4,9 @@ import React, { useEffect, useState } from 'react';
 import 'react-dom';
 import NavBar from './components/NavBar';
 import MainContainer from './components/MainContainer';
+import Test from './components/Test';
 
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
 
@@ -29,13 +30,21 @@ function App() {
 // This data is then passed to the main component
 
   return (
-    <Router>
+    <HashRouter>
     <div className="app">
       <Routes>
-        <Route path='/:name' element={<MainContainer />}/>
+        <Route path='/' element={<Test />}/>
+        <Route path='/:earth' element={<MainContainer name='earth'/>}/>
+        <Route path='/:jupiter' element={<MainContainer name='jupiter'/>}/>
+        <Route path='/:mars' element={<MainContainer name='mars'/>}/>
+        <Route path='/:mercury' element={<MainContainer name='mercury'/>}/>
+        <Route path='/:neptune' element={<MainContainer name='neptune'/>}/>
+        <Route path='/:saturn' element={<MainContainer name='saturn'/>}/>
+        <Route path='/:uranus' element={<MainContainer name='uranus'/>}/>
+        <Route path='/:venus' element={<MainContainer name='venus'/>}/>
       </Routes>
     </div>
-    </ Router>
+    </HashRouter>
   );
 }
 

@@ -6,7 +6,7 @@ import SidePanel from './SidePanel';
 import {useParams} from "react-router-dom";
 import NavBar from './NavBar';
 
-function MainContainer() {
+function MainContainer(props) {
 
     const [planetData, setPlanetData] = useState(null)
     const [isLoading, setLoading] = useState(true)
@@ -23,7 +23,7 @@ function MainContainer() {
         })
         .then(data => {
             const filtered = data.filter(planet => {
-                return planet.name.toLowerCase() === params.name.toLowerCase()
+                return planet.name.toLowerCase() === props.name.toLowerCase()
             })
             setPlanetData(filtered)
             setLoading(false);
