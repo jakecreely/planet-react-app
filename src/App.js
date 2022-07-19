@@ -34,14 +34,7 @@ function App() {
     <div className="app">
       <Routes>
         <Route path='/' element={<Test />}/>
-        <Route path='/earth' element={<MainContainer name='earth'/>}/>
-        <Route path='/jupiter' element={<MainContainer name='jupiter'/>}/>
-        <Route path='/mars' element={<MainContainer name='mars'/>}/>
-        <Route path='/mercury' element={<MainContainer name='mercury'/>}/>
-        <Route path='/neptune' element={<MainContainer name='neptune'/>}/>
-        <Route path='/saturn' element={<MainContainer name='saturn'/>}/>
-        <Route path='/uranus' element={<MainContainer name='uranus'/>}/>
-        <Route path='/venus' element={<MainContainer name='venus'/>}/>
+        <Route path='/:name' element={<MainContainer />}/>
       </Routes>
     </div>
     </HashRouter>

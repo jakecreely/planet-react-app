@@ -23,7 +23,7 @@ function MainContainer(props) {
         })
         .then(data => {
             const filtered = data.filter(planet => {
-                return planet.name.toLowerCase() === props.name.toLowerCase()
+                return planet.name.toLowerCase() === params.name.toLowerCase()
             })
             setPlanetData(filtered)
             setLoading(false);
