@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import MainContainer from './components/MainContainer';
 import Test from './components/Test';
 
-import {HashRouter, Route, Routes} from 'react-router-dom';
+import {HashRouter, Route, Routes, Navigate} from 'react-router-dom';
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
     <HashRouter>
     <div className="app">
       <Routes>
-        <Route path='/' element={<Test />}/>
+        <Route path='/' element={<Navigate to='/earth' replace/>}/>
         <Route path='/:name' element={<MainContainer />}/>
       </Routes>
     </div>
