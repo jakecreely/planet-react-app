@@ -1,0 +1,38 @@
+.app {
+    background-color: $background;
+    background-image: url('../../public/assets/background-stars.svg');
+    overflow: auto;
+}
+
+@media screen and (min-width: 769px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.0625rem solid rgba(white, 0.2);
+    }
+
+    .nav-container__icon--off {
+        display: none
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-container__title {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    .navbar {
+        height: 100%;
+
+        justify-content: center;
+
+
+        flex-wrap: wrap;
+
+    }
+}
