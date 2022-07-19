@@ -1,11 +1,5 @@
 @import './_base';
 
-.app {
-    background-color: $background;
-    background-image: url('../../public/assets/background-stars.svg');
-    overflow: auto;
-}
-
 .navbar-collapse {
     display: none;
 }
@@ -18,19 +12,6 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 0.0625rem solid rgba(white, 0.2);
-
-    .nav-title {
-        @extend h2;
-        font-weight: 400;
-        font-size: 1.75rem;
-        line-height: 2.25rem;
-        letter-spacing: -0.065625rem;
-        color: $primaryText;
-        padding-top: 1.375rem;
-        padding-left: 2rem;
-
-        min-width: 8.75rem;
-    }
 
     .toggle-icon {
         display: none
